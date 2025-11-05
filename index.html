@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dev Tamakuwala — Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071028);color:#e6eef8}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:22px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:30px;color:#021124}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);margin-top:6px}
+    .row{display:flex;gap:20px;margin-top:18px}
+    .col{flex:1}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);cursor:pointer;text-decoration:none;color:inherit;font-weight:600}
+    .outline{border:1px solid rgba(255,255,255,0.06);background:transparent}
+    section{margin-top:20px}
+    h2{margin:6px 0 12px 0}
+    ul{margin:0;padding-left:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;font-weight:600;border:1px solid rgba(255,255,255,0.02)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:800px){.row{flex-direction:column}.grid{grid-template-columns:1fr}}
+    /* subtle code block look for PoC and tools */
+    .tools{display:flex;flex-direction:column;gap:8px}
+    .tool-item{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;background:rgba(255,255,255,0.015);border:1px solid rgba(255,255,255,0.02)}
+    .projects .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.02)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.35);border:1px solid rgba(255,255,255,0.03);font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">DT</div>
+        <div style="flex:1">
+          <h1>Dev Tamakuwala <span style="font-weight:500;color:var(--muted);font-size:16px">— Cybersecurity Enthusiast</span></h1>
+          <div class="sub">IT Security Intern at Sentrolis Info Sec • CPEH, CPTE (mile2) • Bhatar, Surat</div>
+          <nav style="margin-top:12px">
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn outline" href="#projects">Projects</a>
+            <a class="btn outline" href="#certs">Certifications</a>
+            <a class="btn" href="#resume">Download Resume</a>
+          </nav>
+        </div>
+        <div style="text-align:right">
+          <div class="small">📞 +91 98255 59759</div>
+          <div class="small">✉️ devtamakuwala007@gmail.com</div>
+          <div style="height:8px"></div>
+          <a class="btn" href="https://www.linkedin.com/in/dev-tamakuwala/" target="_blank">LinkedIn</a>
+        </div>
+      </header>
+
+      <section id="about">
+        <h2>About</h2>
+        <p class="small">I am a passionate and detail-oriented cybersecurity enthusiast with hands-on experience in ethical hacking, penetration testing, and vulnerability assessments. I focus on identifying and mitigating risks using industry tools and methodologies (OWASP Top 10, network reconnaissance, exploitation simulations).</p>
+      </section>
+
+      <div class="row">
+        <div class="col">
+          <section id="experience">
+            <h2>Experience</h2>
+            <div class="projects">
+              <div class="project">
+                <strong>IT Security Intern — Sentrolis Info Sec</strong>
+                <div class="small">Jan 2025 — Present • Surat</div>
+                <ul>
+                  <li>Performed vulnerability assessments & basic penetration testing on web apps, networks, and systems.</li>
+                  <li>Used tools: Nmap, Burp Suite, Wireshark, OWASP ZAP, Nikto. Created PoC screenshots and remediation recommendations.</li>
+                  <li>Conducted network scanning, password cracking, and social engineering simulations. Applied OWASP Top 10 principles.</li>
+                </ul>
+              </div>
+
+              <div class="project" style="margin-top:12px">
+                <strong>Web Developer Intern — SM Techno</strong>
+                <div class="small">May 2024 — June 2024 • Surat</div>
+                <ul>
+                  <li>Built responsive web pages using HTML, CSS, and JavaScript. Used Git for version control.</li>
+                  <li>Contributed to website maintenance and client requirements gathering.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" style="margin-top:16px">
+            <h2>Education</h2>
+            <div class="small">B.Tech — Computer Engineering, MBIT College, Anand (2021 — 2025)</div>
+          </section>
+
+          <section id="contact" style="margin-top:16px">
+            <h2>Contact</h2>
+            <p class="small">Phone: +91 98255 59759<br>Email: <a href="mailto:devtamakuwala007@gmail.com">devtamakuwala007@gmail.com</a><br>LinkedIn: <a href="https://www.linkedin.com/in/dev-tamakuwala/" target="_blank">/in/dev-tamakuwala</a></p>
+          </section>
+        </div>
+
+        <div class="col">
+          <section id="skills">
+            <h2>Skills & Tools</h2>
+            <div class="skills" style="margin-bottom:10px">
+              <span class="chip">Ethical Hacking</span>
+              <span class="chip">Penetration Testing</span>
+              <span class="chip">Vulnerability Assessment</span>
+              <span class="chip">Network Scanning</span>
+              <span class="chip">Social Engineering</span>
+              <span class="chip">Web App Security</span>
+            </div>
+
+            <div class="tools">
+              <div class="tool-item"><div>Nmap</div><div class="small">Network discovery</div></div>
+              <div class="tool-item"><div>Burp Suite (CE)</div><div class="small">Web testing</div></div>
+              <div class="tool-item"><div>Wireshark</div><div class="small">Packet analysis</div></div>
+              <div class="tool-item"><div>OWASP ZAP</div><div class="small">Vuln scanning</div></div>
+              <div class="tool-item"><div>Hashcat / John</div><div class="small">Password audits</div></div>
+            </div>
+          </section>
+
+          <section id="certs" style="margin-top:16px">
+            <h2>Certifications</h2>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div class="badge">CPEH — Certified Professional Ethical Hacker (mile2)</div>
+              <div class="badge">CPTE — Certified Penetration Testing Engineer (mile2)</div>
+              <div class="badge">Penetration Testing Bootcamp (Hands-on)</div>
+            </div>
+          </section>
+
+          <section id="projects" style="margin-top:16px">
+            <h2>Sample Projects</h2>
+            <div class="projects">
+              <div class="project">
+                <strong>Web App Vulnerability Lab</strong>
+                <div class="small">Used OWASP Juice Shop to practice SQLi, XSS and auth bypass techniques. Documented PoCs and remediation steps.</div>
+              </div>
+
+              <div class="project" style="margin-top:10px">
+                <strong>Network Mapping & Analysis</strong>
+                <div class="small">Scanned a segmented lab network with Nmap and analyzed packets with Wireshark to identify misconfigurations and open services.</div>
+              </div>
+
+              <div class="project" style="margin-top:10px">
+                <strong>Password Audit Simulation</strong>
+                <div class="small">Performed password strength testing using Hashcat and John the Ripper in an ethical, lab-only environment to improve credential policies.</div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <section id="resume" style="margin-top:18px;display:flex;gap:12px;align-items:center;justify-content:space-between">
+        <div>
+          <h2 style="margin:0">Resume</h2>
+          <div class="small">PDF version of the resume (click to download)</div>
+        </div>
+        <div>
+          <!-- Replace href with your actual resume file path after uploading -->
+          <a class="btn" href="#" onclick="alert('Replace this link with your resume file path.');return false;">Download Resume (PDF)</a>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <strong>Dev Tamakuwala</strong> — Cybersecurity Enthusiast • Built with care</div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
